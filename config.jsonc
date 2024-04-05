@@ -6,6 +6,7 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
+    "reload_style_on_change": true,
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/mode",
@@ -16,19 +17,19 @@
         "hyprland/window"
     ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
+        // "mpd", // (music player daemon instance)
+        // "idle_inhibitor",
         "pulseaudio",
         "network",
-        "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
-        "backlight",
-        "keyboard-state",
+        // "power-profiles-daemon",
+        // "cpu",
+        // "memory",
+        // "temperature",
+        // "backlight",
+        // "keyboard-state",
         "hyprland/language",
-        "battery",
-        "battery#bat2",
+        // "battery",
+        // "battery#bat2",
         "clock",
         "tray"
     ],
@@ -37,16 +38,14 @@
         "disable-scroll": true,
         "all-outputs": false,
         "warp-on-scroll": false,
-        "format": "{name}: {icon}",
+        "format": "{name}:  {icon}",
         "format-icons": {
-            // "1": "",
-            // "2": "",
-            // "3": "",
-            // "4": "",
-            // "5": "",
+            "1": "",
+            "3": "",
+            "4": "",
             "urgent": "",
             "focused": "",
-            "default": ""
+            "default": "󰕮"
         }
     },
     "keyboard-state": {
