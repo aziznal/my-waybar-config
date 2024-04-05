@@ -31,7 +31,8 @@
         // "battery",
         // "battery#bat2",
         "clock",
-        "tray"
+        "tray",
+        "scratchpad"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -176,9 +177,9 @@
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "headphone": "  ",
+            "hands-free": "  ",
+            "headset": "  ",
             "phone": "",
             "portable": "",
             "car": "",
