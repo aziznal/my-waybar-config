@@ -179,12 +179,20 @@ label:focus {
   background-color: #90b1b1;
 }
 
-#network {
-  background-color: #2980b9;
+#network.wifi {
+  background-color: purple;
+  padding-right: 11px;
 }
-
+#network.ethernet {
+  background-color: dodgerblue;
+  padding-right: 9px;
+}
+#network.speed {
+  background-color: #f0932b;
+  min-width: 100px;
+}
 #network.disconnected {
-  background-color: #f53c3c;
+  background-color: gray;
 }
 
 #pulseaudio {

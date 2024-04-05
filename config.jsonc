@@ -8,19 +8,21 @@
     // Choose the order of the modules
     "reload_style_on_change": true,
     "modules-left": [
-        "hyprland/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad",
-        "custom/media"
+        "custom/media",
+        "hyprland/window"
     ],
     "modules-center": [
-        "hyprland/window"
+        "hyprland/workspaces"
     ],
     "modules-right": [
         // "mpd", // (music player daemon instance)
         // "idle_inhibitor",
         "pulseaudio",
-        "network",
+        "network#ethernet",
+        "network#wifi",
+        "network#speed",
         // "power-profiles-daemon",
         // "cpu",
         // "memory",
@@ -159,14 +161,29 @@
         "power-saver": ""
       }
     },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} 󰈀 ",
-        "tooltip-format": "{ifname} via {gwaddr} 󰈀 ",
-        "format-linked": "{ifname} (No IP) 󰈀 ",
+    "network#ethernet": {
+        "interface": "enp12s0",
+        "format-ethernet": "󰈀 ",
+        "tooltip-format": "{ifname} {ipaddr} via {gwaddr} 󰈀 ",
+        "format-linked": "󰈀  Disconnected",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}  {bandwidthDownBytes}",
+        "interval": 1
+    },
+    "network#wifi": {
+        "interface": "wlp13s0",
+        "format-wifi": "   {essid} ({signalStrength}%)",
+        "tooltip-format": " ",
+        "format-linked": "   Available",
+        "format-disconnected": "   Disconnected",
+        "format-alt": "{ifname}: {ipaddr}  {bandwidthDownBytes}",
+        "interval": 1
+    },
+    "network#speed": {
+        "format-wifi": "({signalStrength}%)   {bandwidthDownBytes}",
+        "format-ethernet": "󰈀  {bandwidthDownBytes} ",
+        "format-disconnected": "Disconnected ⚠",
+        "interval": 1
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
