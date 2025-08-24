@@ -8,10 +8,10 @@
   "modules-left": ["hyprland/mode", "hyprland/window"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
+    "network#speed",
     "pulseaudio",
     // "network#wifi",
     // "network#ethernet",
-    "network#speed",
     "cpu",
     "memory",
     "hyprland/language",
