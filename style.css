@@ -1,11 +1,11 @@
 * {
   font-family: UbuntuMono Nerd Font;
-  font-size: 13px;
-  color: #fff1d6;
+  font-size: 14px;
+  color: #dbdbdb;
 }
 
 window#waybar {
-  background-color: rgba(160, 90, 0, 0.7);
+  background-color: #2d2a4f;
   border-radius: 500px;
 }
 
@@ -26,12 +26,12 @@ window#waybar.chromium {
   border-radius: 6px;
   margin: 0 2px;
   padding: 0 4px;
-  background-color: #918877;
+  background-color: #433d70;
   font-weight: bold;
 }
 
 #workspaces button.active {
-  background-color: #cfa048;
+  background-color: #4434eb;
 }
 
 #workspaces button.urgent {
@@ -100,4 +100,3 @@ window#waybar.chromium {
   -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
 }
-
